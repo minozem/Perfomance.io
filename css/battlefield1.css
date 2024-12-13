@@ -1,0 +1,490 @@
+* {
+	box-sizing: border-box;
+	font-family: "Poppins";
+}
+.bgvideo {
+  filter: brightness(50%);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -9999;
+}
+.search {
+    position: relative;
+    top:-80px;
+    left:23%;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    background: #fff;
+    border-radius:50px;
+    transition:0.7s;
+    box-shodow: 0 0 0 5px #000;
+}
+.search .icon {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius:50px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    z-index: 999;
+    cursor: pointer;
+}
+.search .icon:before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border:3px solid #000;
+    border-radius: 50%;
+    transform:translate(-2px, -2px);
+}
+.search .icon:after {
+    position: absolute;
+    content:'';
+    width: 3px;
+    height: 12px;
+    background:#000;
+    transform: translate(8px, 8px) rotate(-45deg);
+}
+.search.active {
+    width: 300px;
+}
+.search .input_search-bar {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.search .input_search-bar input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+    outline:0;
+    font-size:18px;
+    padding: 10px 0;
+}
+
+.clear {
+    position: absolute;
+    top: 50%;
+    right:20%;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    transform: translateY(-50%);
+}
+.clear::before {
+    position: absolute;
+    content:'';
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(45deg);
+}
+.clear::after {
+    position: absolute;
+    content:'';
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(-45deg);
+}
+.container-logo img {
+    width: 9%;
+    margin-top: 30px;
+    margin-left: 1%;
+}
+.container-logo {
+    position: relative;
+   text-align: center;
+   margin-right: auto;
+   margin-left: auto;
+   backdrop-filter: blur(400px);
+   border-radius: 20px; 
+   width: 80%;
+   height: 150px;
+
+}
+.container-logo h1 {
+    color:#fff;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5), 2px 2px 1px rgba(255,255,255,0.32);
+    position: absolute;
+    text-align: left;
+    font-size:40px;
+    left: 70px;
+    top:10%;
+}
+.container-logo h2 {
+    color:#fff;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5), 2px 2px 1px rgba(255,255,255,0.32);
+    font-size:19px;
+    position: absolute;
+    text-align: left;
+    left:80px;
+    top:60px;   
+}
+html,body {
+    overflow-x: hidden;
+    font-family:"Poppins";
+}
+nav ul  {
+    position: absolute;
+    top: 27%;
+    right: 110px;
+    float:right;
+    width: 27%;
+    font-size:19px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+ header ul li {
+    display: inline-block;
+}
+header nav ul li a {
+    border: 0;
+    color:#fff;
+    text-decoration: none;
+}
+header nav ul li.btn a {
+    background: #1d1b1b;
+    padding: 12px 17px;
+    border-radius: 15px;
+    transition: all 600ms ease;
+}
+header nav ul li.btn a:hover {
+         cursor: pointer;
+         transform: scale(1.1);
+         border: 3px solid #1d1b1b;
+         background-color: #808080;
+         border-top-right-radius: 100% 15px;
+        border-bottom-left-radius: 100% 20px;
+}
+button a {
+    text-decoration:none    ;
+    color:#fff;
+}
+
+.container-gameinfo .name h2 {
+	text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5), 2px 2px 1px rgba(255,255,255,0.32);
+	width: 900px;
+	position: absolute;
+	left: 49%;
+	right:50%;
+	top:20%;
+	color:#fff;
+	font-size: 40px;
+	font-weight: 800;
+}
+.container-gameinfo .block img {
+	border-radius: 17px;
+	position: relative;
+    margin-top: 50px;
+	right: 50%;
+	left:26%;
+	width: 360px;
+	height: 440px;
+}
+.container-gameinfo nav ul  {
+    padding: 20px 20px 0px 20px;
+    border-radius: 20px;
+    backdrop-filter:blur(400px) ;  
+	color:#e8dddd;
+	display: list-item;
+   	float:left;
+	width: 580px;
+	position: absolute;
+	top:28%;
+	right: 50%;
+	left: 48%;
+}
+.Publisher  {
+	background: #b37645;
+	padding: 10px 15px;
+	background-repeat: no-repeat, repeat;
+  	background-size: cover;
+  	border-radius: 15px;
+}
+.Developer {
+	padding: 15px 15px
+}
+.Year-of-release  {
+	background: #b37645;
+	padding: 10px 15px;
+	background-repeat: no-repeat, repeat;
+  	background-size: cover;
+  	border-radius: 15px;
+}
+.Category {
+	padding: 15px 15px
+}
+.Interface-language  {
+	background: #b37645;
+	padding: 10px 15px;
+	background-repeat: no-repeat, repeat;
+  	background-size: cover;
+  	border-radius: 15px;
+}
+.Voice-over-language {
+	padding: 15px 15px
+}
+.container-description {
+    width: 47%;
+}
+.gameplot1 h1 {
+    text-shadow: 1px 2px 14px #000000;
+    text-align: center;
+    width: 50%;
+    color: #e8dddd;
+    font-size:40px;
+    font-weight:900;
+   position: relative;
+   margin-bottom: 20px;
+   margin-top: 40px;
+   left:58%;
+}
+.gameplot1 p {
+    margin-top: 20px;
+    width: 120%;
+    position: relative;
+    left: 52%;
+    text-align:justify;
+    color: #b9b8b8;
+    font-size: 17px;
+    line-height:30px;
+}
+.gamemechanic h1 {
+    text-shadow: -1px 2px 14px #000000;
+    text-align: center;
+    width: 50%;
+    color: #e8dddd;
+    font-size:40px;
+    font-weight:900;
+   position: relative;
+   margin-top: 15px;
+   margin-bottom: 25px;
+   right:-120% ;
+}
+.gamemechanic p {
+    width: 120%;
+    position: relative;
+    left: 52%;
+    text-align:justify;
+    color: #b9b8b8;
+    font-size: 17px;
+    line-height:30px;
+}
+.The-epilogue h1 {
+    text-shadow: 1px 2px 14px #000000;
+    text-align: center;
+    width: 50%;
+  color: #e8dddd;
+    font-size:40px;
+    font-weight:900;
+   position: relative;
+   margin-bottom: 20px;
+   margin-top: 30px;
+   left:58%;
+}
+.The-epilogue p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 120%;
+    position: relative;
+    left: 52%;
+    text-align:justify;
+    color: #b9b8b8;
+    font-size: 17px;
+    line-height:30px;
+}
+
+.games1 img,.games2 img {
+    width: 450px;
+    height: 270px;
+    cursor: pointer;
+    border-radius:15px;
+}
+.container-tranding {
+    position: relative;
+    width: 100%;
+    right: 50%;
+    left: 29%;
+}
+.container-tranding .games1{
+  margin-top: 50px;  
+}
+.container-tranding .games1,.container-tranding .games2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-tranding .games1 img,.container-tranding .games2 img {
+    border-radius: 17px;
+    transition: all 0.5s ease;
+}
+.container-tranding .games1 img:hover,.container-tranding .games2 img:hover{
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    transform: scale(1.1);
+}
+
+.container-system-requirements .System_requirements_Batman_Arkham_Origins h2 {
+   text-shadow: 0px 0px 18px rgba(255,255,255,0.83);
+   color: #fff;
+   margin-top: 40px;
+   margin-bottom: 10px;
+   font-size:30px;
+   font-weight: 800;
+    width: 700px;
+    position: relative;
+    right: 50%;
+    left: 28%;
+}
+.container-system-requirements nav ul  {
+    text-align: center;
+    width: 750px;
+    color:#e8dddd;
+    display: list-item;
+    float:left;
+    position: relative;
+    right: 50%;
+    left: 25%;
+}
+.OC  {
+    background: #b37645;
+    padding: 10px 15px;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    border-radius: 15px;    
+}
+.Processor {
+    padding: 15px 15px
+}
+.Memory  {
+    background: #b37645;
+    padding: 10px 15px;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+.Video {
+    padding: 15px 15px
+}
+.DirectX  {
+    background: #b37645;    
+    padding: 10px 15px;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+.Disk-space {
+    padding: 15px 15px
+}
+.container-system-requirements .btn  {
+    color:#fff;
+    text-decoration: none;
+    position: absolute;
+    top: 242%;
+    left:67%;
+    font-size:17px;
+    font-weight: 800;
+    background: #1d1b1b;
+    padding: 40px 17px;
+    border-radius: 15px;
+    transition: all 600ms ease;
+}
+.container-system-requirements .btn :hover {
+    transform: scale(1.1);
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    top: 290%;
+    background: radial-gradient(circle, rgba(97,119,130,1) 0%, rgba(79,88,93,1) 100%);
+    padding-bottom: 50px;
+}
+footer .blocks-container {
+    color:#fff;
+        display: flex;
+        justify-content: space-between;
+}
+footer .blocks-container .Perfonace {
+    position: relative;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 800;
+    left: 24px;
+    bottom: 5px;
+    top:17px;
+}
+footer .blocks-container p {
+    color:#fff;
+    opacity: 0.7;
+    width: 300px;
+    padding-left: 30%;
+}
+footer .blocks-container span {
+    color:#fff;
+    opacity: 0.7;
+    width: 300px;
+    margin:35px 0 ;
+    padding-left: 50px;
+}
+footer .blocks-container .About_us {
+    position: relative;
+    left:20%;
+}
+footer .blocks-container h4 {
+    color:#fff;
+    text-align: center;
+    margin-top: 30px;
+    padding-right: 10%;
+    font-weight:500;
+    font-size:17px;
+}
+footer .blocks-container .stroka3 p {
+    width: 350px;
+        padding-right: 20%;
+} 
+footer .blocks-container ul {
+    list-style: none;
+}
+footer .blocks-container ul li {
+    color:#fff;
+    margin-top: 10px;
+    opacity: 0.7;
+    margin-left: 10%;
+}
+footer p {
+    text-align: center;
+    color:#fff;
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+footer .bottomhr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

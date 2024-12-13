@@ -1,0 +1,213 @@
+html {
+    font-family:"Poppins";
+    background: #999;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.bgvideo {
+  filter: brightness(60%);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -9999;
+}
+.container-logo img {
+    width: 9%;
+    margin-top: 20px;
+    margin-left: -1%;
+}
+.container-logo {
+    position: relative;
+   text-align: center;
+   margin-right: auto;
+   margin-left: auto;
+   backdrop-filter: blur(400px);
+   border-radius: 20px; 
+   width: 80%;
+   padding-bottom: 20px;
+
+}
+.container-logo h1 {
+    color:#fff;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5), 2px 2px 1px rgba(255,255,255,0.32);
+    position: absolute;
+    text-align: left;
+    font-size:40px;
+    left: 70px;
+    top:20%;
+}
+.container-logo h2 {
+    color:#fff;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5), 2px 2px 1px rgba(255,255,255,0.32);
+    font-size:19px;
+    position: absolute;
+    text-align: left;
+    left:80px;
+    top:60px;   
+}
+html {
+    font-family:"Poppins";
+}
+nav ul  {
+    position: absolute;
+    top: 30%;
+    right: 110px;
+    float:right;
+    width: 27%;
+    font-size:19px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+ header ul li {
+    display: inline-block;
+}
+header nav ul li a {
+    border: 0;
+    color:#fff;
+    text-decoration: none;
+}
+header nav ul li.btn a {
+    background: #1d1b1b;
+    padding: 12px 17px;
+    border-radius: 15px;
+    transition: all 600ms ease;
+}
+header nav ul li.btn a:hover {
+         cursor: pointer;
+         transform: scale(1.1);
+         border: 3px solid #1d1b1b;
+         background-color: #808080;
+         border-top-right-radius: 100% 15px;
+        border-bottom-left-radius: 100% 20px;
+}
+button a, .container-email .block2 button {
+    text-decoration:none    ;
+    color:#fff;
+}
+.heroinfo {
+    position: relative;
+    left: 7%;
+    text-align: justify;
+    padding-top: 150px;
+    padding-left: 30px;
+    padding-bottom: 220px;
+    width: 600px;
+    height: 800px;
+}
+.heroinfo h2 {
+    text-align: center;
+    color:#FFF;
+    width: 120%;
+    font-size:55px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+.heroinfo p {
+    text-align:center;
+    width: 800px;
+    color:#fff;
+    font-size:26px;
+    font-weight: 600;
+    line-height: 135%;
+}
+.heroinfo .btn {
+    margin-left: 54%;
+    margin-top: 50px;
+    font-size:17px;
+    background-color: #CDB4B6;
+    color:#fff;
+    border-radius:30px;
+    border:0;
+    padding: 15px 30px;
+    transition: all 700ms ease;
+}
+.heroinfo .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #D7AFA9;
+}
+.heroinfo img {
+    border-radius: 70px;
+    max-width:170%;
+    width:120%;
+    position: absolute;
+    top: 25%;
+    left:143%;
+    bottom: 430px;
+
+}
+footer {
+    background: linear-gradient(0deg, rgba(51,69,82,1) 0%, rgba(93,93,93,1) 100%);
+    padding-bottom: 50px;
+}
+footer .blocks-container {
+    color:#fff;
+        display: flex;
+        justify-content: space-between;
+}
+footer .blocks-container .Perfonace {
+    position: relative;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 800;
+    left: 24px;
+    bottom: 5px;
+    top:17px;
+}
+footer .blocks-container p {
+    color:#fff;
+    opacity: 0.7;
+    width: 300px;
+    padding-left: 30%;
+}
+footer .blocks-container span {
+    color:#fff;
+    opacity: 0.7;
+    width: 300px;
+    margin:35px 0 ;
+    padding-left: 50px;
+}
+footer .blocks-container h4 {
+    color:#fff;
+    text-align: center;
+    margin-top: 30px;
+    padding-right: 10%;
+    font-weight:500;
+    font-size:17px;
+}
+footer .blocks-container .stroka3 p {
+    width: 350px;
+        padding-right: 20%;
+} 
+footer .blocks-container ul {
+    list-style: none;
+}
+footer .blocks-container ul li {
+    color:#fff;
+    margin-top: 10px;
+    opacity: 0.7;
+    margin-left: 10%;
+}
+footer hr {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+footer p {
+    text-align: center;
+    color:#fff;
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+hr {
+    margin-top: 10px;
+}
